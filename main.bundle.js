@@ -211,7 +211,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.Tasks = [{ description: 'vaisselle', state: 'todo' }, { description: 'menage', state: 'todo' }, { description: 'projet perso', state: 'todo' }];
+        this.Tasks = [];
         console.log(JSON.parse(localStorage.getItem('Tasks')));
         if ((localStorage.getItem('Tasks')) !== null) {
             this.Tasks = JSON.parse(localStorage.getItem('Tasks'));
